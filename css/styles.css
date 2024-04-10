@@ -274,7 +274,7 @@ section.details > * {
 }
 
 footer {
-    background: linear-gradient(180deg, #000, #030303, #ffbf001c);
+    background: linear-gradient(180deg, #1a1a1a, #1c1c1c, #ffbf001c);
     color: #9f9f9f;
     padding: 1rem;
     text-align: center;
@@ -282,6 +282,10 @@ footer {
     justify-content: center;
     align-items: center;
     height: 5rem;
+}
+
+.homepage ~ footer {
+    background: linear-gradient(180deg, #000, #030303, #ffbf001c);
 }
 
 footer p {
@@ -301,9 +305,14 @@ footer p {
     text-align: center;
 }
 
-.content .container > p {
+.content .me {
     margin: 2rem 0;
     padding: 2rem;
+}
+
+.content .me p {
+    margin: 1rem 0;
+    display: block;
 }
 
 .content img.headshot {
