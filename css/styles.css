@@ -635,6 +635,17 @@ main.project-page img {
     object-position: top;
 }
 
+main.project-page img.showcase {
+    width: auto;
+    max-height: 50rem;
+    margin-top: 2rem;
+}
+
+main.project-page iframe {
+    margin: 2rem auto 0;
+    display: block;
+}
+
 /* Media Queries */
 
 @media (min-width: 48em) {
