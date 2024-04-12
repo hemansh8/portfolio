@@ -483,6 +483,21 @@ form.submitted .alert-wrapper {
 }
 
 /* Portfolio */
+.portfolio .container.go-back {
+    padding-bottom: 0;
+    margin-bottom: -1rem;
+    display: block;
+}
+
+.portfolio .container.go-back a {
+    color: #fec10b;
+    text-decoration: none;
+}
+
+.portfolio .container.go-back a:hover {
+    text-decoration: underline;
+}
+
 .portfolio .card {
     display: grid;
     grid-template-areas: "image image"
