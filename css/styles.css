@@ -487,6 +487,7 @@ form.submitted .alert-wrapper {
     padding-bottom: 0;
     margin-bottom: -1rem;
     display: block;
+    padding-left: 2rem;
 }
 
 .content .container.go-back a {
@@ -708,7 +709,7 @@ main.project-page iframe {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem 1rem;
-        padding: 4rem 1rem;
+        padding: 4rem 2rem;
     }
 
     .portfolio .card {
