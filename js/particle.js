@@ -22,6 +22,8 @@ function init() {
 
 	window.addEventListener('resize', onResize);
 	window.addEventListener('mousemove', onMouseMove);
+	window.addEventListener('touchmove', onTouchMove);
+
 
 	onResize();
 
@@ -44,6 +46,12 @@ function onMouseMove(e) {
 
 	_mouseX = e.pageX;
 	_mouseY = e.pageY;
+}
+
+function onTouchMove(e) {
+
+	_mouseX = e.touches[0].pageX;
+	_mouseY = e.touches[0].pageY;
 }
 
 function onResize() {
