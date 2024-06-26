@@ -71,7 +71,7 @@ img {
     padding: 0.75rem 2rem;
     font-family: 'Exo', Helvetica, sans-serif;
     font-weight: bold;
-    margin: 2rem 1rem 0;
+    margin: 2rem 0 0;
     transition: all 0.2s;;
 }
 
@@ -170,8 +170,8 @@ main.homepage {
 }
 
 .introduction .primary {
+    display: block;
     width: fit-content;
-    margin-bottom: 7rem;
 }
 
 /* .introduction img.headshot {
@@ -615,14 +615,21 @@ main.project-page .description {
     margin: 0;
 }
 
-main.project-page .cta.highlight {
+main.project-page .cta-container {
     display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+main.project-page .cta.highlight {
+    display: block;
     background: #fec10b;
     text-decoration: none;
     color: #000 !important;
     font-weight: bold;
     padding: 1rem 2rem;
     margin: 2rem 0;
+    width: fit-content;
 }
 
 main.project-page .cta.highlight:hover {
@@ -648,6 +655,21 @@ main.project-page iframe {
 }
 
 /* Media Queries */
+
+@media (min-width: 36em) {
+    .introduction .primary {
+        display: inline-block;
+        margin-bottom: 7rem;
+    }
+
+    .secondary {
+        margin: 2rem 1rem 0;
+    }
+
+    main.project-page .cta.highlight {
+        display: inline-block;
+    }
+}
 
 @media (min-width: 48em) {
     .container {
